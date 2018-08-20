@@ -1,0 +1,25 @@
+{
+    "name": "hunteryun/xunsearch",
+    "description": "simple xunsearch package.",
+    "license": "MIT",
+    "homepage": "http://www.hunterphp.com",
+    "support": {
+        "issues": "https://github.com/hunteryun/xunsearch/issues",
+        "source": "https://github.com/hunteryun/xunsearch"
+    },
+    "authors": [
+        {
+            "name": "DrupalHunter",
+            "email": "498023235@qq.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.4.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Hunter\\Xunsearch\\": "src/"
+        },
+        "classmap": ["src/lib/"]
+    }
+}
