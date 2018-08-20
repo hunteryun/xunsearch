@@ -28,7 +28,7 @@ class Search extends \XS
         parent::__construct($config);
 
         if(!empty($config)){
-            $this->config = array_merge($this->config,$config);dd($this->config);
+            $this->config = array_merge($this->config,$config);
         }
     }
 
