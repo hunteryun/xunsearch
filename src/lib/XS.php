@@ -295,6 +295,15 @@ class XS extends XSComponent
 	public function __construct($config)
 	{
 		$this->_config = $config;
+
+		$scheme = new \XSFieldScheme;
+		foreach ($config as $key => $value) {
+			if (is_array($value)) {
+				$scheme->addField($key, $value);
+			}
+		}
+		$this->_scheme = $this->_bindScheme = $scheme;
+
 		self::$_lastXS = $this;
 	}
 	public function __destruct()
