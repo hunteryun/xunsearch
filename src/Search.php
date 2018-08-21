@@ -85,7 +85,7 @@ class Search extends \XS
      * $data array  一维
      * @return mixed
      */
-    public function updateIndexOne(array $data)
+    public function updateIndex(array $data)
     {
         if (!array($data)) {
             die('参数错误！');
@@ -93,6 +93,11 @@ class Search extends \XS
         if (count($data) == count($data, 1)) {
             // 一维数组
             $this->getIndex()->update(new \XSDocument($data));
+        } else {
+            // 多维数组
+            foreach ($data as $v) {
+                $this->getIndex()->update(new \XSDocument($v));
+            }
         }
         //索引是否立即生效
         if ($this->config['flushIndex']) {

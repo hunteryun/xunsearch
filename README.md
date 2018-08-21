@@ -46,7 +46,7 @@
   $xs = new Search($configs); //$configs is array , not file, I hate file.
 
   $xs->addIndex($data); // $data is your index data array.
-  $xs->updateIndexOne($data);
+  $xs->updateIndex($data);
   $xs->delIndex($ids);
   $xs->cleanIndex();
 
