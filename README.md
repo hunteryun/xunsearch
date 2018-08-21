@@ -5,7 +5,7 @@
 
  重复造这个轮子，只是因为我真的不喜欢demo.ini这种配置文件，根本没法和框架的配置灵活组合，还是数组操作方便。所以我改了改，以方便和我的HunterPHP框架无缝整合！具体参看此模块：
 
- https://github.com/hunteryun/xunsearch
+ https://github.com/hunteryun/xunsearch_api
 
  ### Usage
 
